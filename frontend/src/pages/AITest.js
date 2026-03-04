@@ -19,7 +19,7 @@ const AITest = () => {
 
   useEffect(() => {
     initializeTest();
-  }, []);
+  }, [initializeTest]);
 
   useEffect(() => {
     const timer = setInterval(() => {
