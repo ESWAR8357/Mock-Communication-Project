@@ -42,4 +42,6 @@ class SpeechRecognitionService {
   }
 }
 
-export default new SpeechRecognitionService();
+const speechRecognition = new SpeechRecognition();
+
+export default speechRecognition;
