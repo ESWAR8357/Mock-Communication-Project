@@ -1,6 +1,9 @@
 class SpeechRecognitionService {
   constructor() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    const recognition = SpeechRecognition ? new SpeechRecognition() : null;
+
+export default recognition;
     if (!SpeechRecognition) {
       this.recognition = null;
       return;
